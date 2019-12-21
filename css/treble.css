@@ -48,12 +48,14 @@ body {
 }
 
 .a {
-    margin-top:-23px;
+    margin-top:27px;
 }
 .b {
-    margin-top: -34px;
+    margin-top:17px;
 }
-
+.g {
+    margin-top:-11px;
+}
 .low-d {
     margin-top: +20px;
 }
@@ -61,31 +63,62 @@ body {
     margin-top: +29px;
     text-decoration: line-through;
 }
+.down {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.measure .note-wrap:first-of-type {
+    margin-left:15px;
+}
+.measure .note-wrap:last-of-type {
+    margin-right:15px;
+}
+.note-wrap {
+    width:25px;
+    height:100px;
+    position:relative;
+    float:left;
+    margin-left:5px;
+    margin-right:5px;
+}
+.line:after {
+    content:"\1D116";
+    font-size:40px;
+    font-weight:700;
+    position:absolute;
+    z-index:5;
+    margin-top:65px;
+    margin-left:-2px;
+}
+.half-note:before {
+    content:"\1D15E";
+    font-size:100px;
+    position:relative;
+}
+.half-note {
+    width:50px;
+    float:left;
+}
 .quarter-note:before {
     font-size:100px;
     content:"\1D15F";
     position:relative;
-    margin-left:5px;
-}
-.quarter-note-line:before {
-    font-size:100px;
-    content:"\1D15F";
-    position:relative;
-    margin-left:5px;
-    text-decoration:line-through;
 }
 .quarter-note {
     width:25px;
     float:left;
-    margin-left:5px;
-    margin-right:5px;
+}
+.eighth-note:before {
+    content:"\1D160";
+    font-size:100px;
+    position:relative;
+}
+.eighth-note {
+    width:17px;
+    float:left;
 }
 
-.quarter-note-line {
-    width:25px;
-    float:left;
-    margin-left:5px;
-    margin-right:5px;
-    text-decoration: line-through;
-}
 
